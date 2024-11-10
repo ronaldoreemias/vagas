@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <div>
+                <p>cursos gratuitos</p>
+            </div>
+            <div>
+                <a href="index.html">
+                    <button>vagas de empregos</button>
+                </a>
+            </div>
+        </div>
+        <div class="burcador">
+            <input type="text" style="width: 70%;" placeholder="procure aqui..">
+            <button style="width: 30%;">pesquisar</button>
+        </div>
+    </header>
+    <main>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="barra_navegação">
+            <button>React</button>
+            <button>Node.js</button>
+            <button>TypScript</button>
+            <button>c#</button>
+            <button>Java</button>
+            <button>CSS</button>
+            <button>JAVA SCRIPT</button>
+            <button>PYTHON</button>
+            <button>PySimpleGUI</button>
+            <button>+ mais</button>
+        </div>
+        <div class="curso">
+            <div class="imagem" style="width: 40%; height: 100%;">
+                <img src="img/OIP.jfif" style="width: 100%; height: 100%;">
+            </div>
+            <div class="conteudo" style="display: flex; flex-direction: column; width: 60%;
+            height: 100%; text-align: center; color: black;">
+                <div style="height: 80%;">
+                    <div style="height: 10%;">
+                        <h4>Python do zero</h4>
+                    </div>
+                    <div style="height: 80%;">
+                        <p>curso feito pelo Gustavo Guanabara, nele se 
+                            ensina do zero como codar em PYthon
+                        </p>
+                    </div>
+                </div>
+                <div style="height: 20%; justify-items: center; margin-top: 7px;">
+                    <a href="https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0">
+                        <button>assisitir</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+    </main>
+    <footer>
+        <div class="navegação-footer">
+            <button style="height: 70px; width: 50px; background: none;">
+                <img src="img/setting_9710930.png" style="height: 40px; width: 50px;">Filtrar
+            </button>
+            <a href="suporte.html">
+                <button style="height: 70px; width: 70px; background: none;">
+                    <img src="img/customer-service_9637739.png" style="height: 40px; width: 50px;">suporte
+                </button>
+            </a>
+            <a href="curriculos.html">
+                <button style="height: 70px; width: 70px; background: none;">
+                    <img src="img/support_10517261.png" style="height: 40px; width: 50px;">Config
+                </button>
+            </a>
+        </div>
+    </footer>
+    <section class="filtro-vagas">
+        <ul>
+            <li><a href="#" class="filter" data-filter="frontend">Front-end</a></li>
+            <li><a href="#" class="filter" data-filter="backend">Back-end</a></li>
+            <li><a href="#" class="filter" data-filter="fullstack">Full Stack</a></li>
+            <li><a href="#" class="filter" data-filter="mobile">Mobile</a></li>
+            <li><a href="#" class="filter" data-filter="devops">DevOps</a></li>
+            <li><a href="#" class="filter" data-filter="documentações">documentações</a></li>
+        </ul>
+    </section>
+    <script>
+        document.querySelector('footer button').addEventListener('click', function() {
+            var filtro = document.querySelector('.filtro-vagas');
+            if (filtro.style.display === 'none' || filtro.style.display === '') {
+                filtro.style.display = 'block';
+            } else {
+                filtro.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
